@@ -1,13 +1,12 @@
 # Robomaster ICRA 2019 人工智能挑战赛
-本项目是参加 [RM ICRA AI 大赛](https://www.robomaster.com/zh-CN/robo/icra) 时完成的。在比赛中，4台全自动机器人在场地中的进行射击对抗。
-
-机器人装有激光雷达A2，头尾各一个摄像头。程序环境：Ros-kinetic & C++
+本项目是参加 [RM ICRA AI 大赛](https://www.robomaster.com/zh-CN/robo/icra) 时完成的。在比赛中，4台全自动机器人在场地中进行射击对抗。我们的机器人头尾各装了一个摄像头，并搭载一台A2激光雷达。
 
 软件包概述：
 * Localization：使用 AMCL 算法；此外，机器人在场地中特定区域补充弹药时，我们使用尾部摄像头辅助得到更高精度的定位效果。
 * planning：使用 Lazy Theta* 用于全局路径规划；使用 TEB 用于局部路径规划。
 * detection：通过光学特征识别敌对机器人的装甲板。
 * decision：使用 Behavior Tree 算法 实现机器人的自主决策。
+* 环境：Ros-kinetic & C++
 
 ## 日志
 ### 2019.5.28
